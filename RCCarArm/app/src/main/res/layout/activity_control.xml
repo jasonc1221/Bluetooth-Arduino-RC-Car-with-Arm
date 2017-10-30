@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.rccararm.ControlActivity">
+
+    <Button
+        android:id="@+id/but_forward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forward"
+        android:textSize="12sp"
+        android:layout_marginTop="58dp"
+        android:layout_marginLeft="112dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="112dp" />
+
+    <Button
+        android:id="@+id/but_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:textSize="12sp"
+        android:layout_below="@+id/but_forward"
+        android:layout_toRightOf="@+id/but_forward"
+        android:layout_marginTop="6dp" />
+
+    <Button
+        android:id="@+id/but_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:textSize="12sp"
+        android:layout_above="@+id/but_reverse"
+        android:layout_toLeftOf="@+id/but_reverse"
+        android:layout_toStartOf="@+id/but_reverse" />
+
+    <Button
+        android:id="@+id/but_reverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but_right"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/but_right"
+        android:text="Reverse"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/but_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/but_forward"
+        android:layout_marginTop="6dp"
+        android:layout_toLeftOf="@+id/but_right"
+        android:text="Stop"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/but_CC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CC"
+        android:textSize="12sp"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_above="@+id/but_right"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/but_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textSize="12sp"
+        android:layout_above="@+id/but_retract"
+        android:layout_alignLeft="@+id/but_retract"
+        android:layout_alignStart="@+id/but_retract" />
+
+    <Button
+        android:id="@+id/but_extend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extend"
+        android:textSize="12sp"
+        android:layout_below="@+id/but_CC"
+        android:layout_alignLeft="@+id/but_CC"
+        android:layout_marginRight="13dp" />
+
+    <Button
+        android:id="@+id/but_retract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Retract"
+        android:textSize="12sp"
+        android:layout_marginRight="13dp"
+        android:layout_alignBottom="@+id/but_extend"
+        android:layout_toLeftOf="@+id/but_extend" />
+
+    <Button
+        android:id="@+id/but_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        android:textSize="12sp"
+        android:layout_below="@+id/but_extend"
+        android:layout_alignLeft="@+id/but_extend"
+        android:layout_marginRight="13dp" />
+
+    <Button
+        android:id="@+id/but_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Down"
+        android:textSize="12sp"
+        android:layout_marginRight="13dp"
+        android:layout_alignBottom="@+id/but_up"
+        android:layout_toLeftOf="@+id/but_up" />
+
+    <Button
+        android:id="@+id/but_grab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grab"
+        android:textSize="12sp"
+        android:layout_below="@+id/but_up"
+        android:layout_alignLeft="@+id/but_up"
+        android:layout_marginRight="13dp" />
+
+    <Button
+        android:id="@+id/but_release"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Release"
+        android:textSize="12sp"
+        android:layout_marginRight="13dp"
+        android:layout_alignBottom="@+id/but_grab"
+        android:layout_toLeftOf="@+id/but_grab" />
+
+    <Button
+        android:id="@+id/but_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:text="Disconnect" />
+
+</RelativeLayout>
