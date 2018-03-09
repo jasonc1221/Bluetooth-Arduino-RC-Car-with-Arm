@@ -37,7 +37,7 @@ void setup() {
 }
 
 void loop() {
-  command = Serial.readString();
+  command = Serial.read();
   if(command == 'C')
   {
     turnC();
@@ -111,42 +111,42 @@ void loop() {
 //When servo is looking down
 void turnC(){
   if(angle0 < 180){
-    angle0 = angle0 + 5;
+    angle0 = angle0 - 5;
     myservo0.write(angle0);
   }
 }
 
 void turnCC(){
   if(angle0 > 0){
-    angle0 = angle0 - 5;
+    angle0 = angle0 + 5;
     myservo0.write(angle0);
   }
 }
 
 void retract(){
   if(angle1 < 180){
-    angle1 = angle1 + 5;
+    angle1 = angle1 - 5;
     myservo1.write(angle1);
   }
 }
 
 void extend(){
   if(angle1 > 0){
-    angle1 = angle1 - 5;
+    angle1 = angle1 + 5;
     myservo1.write(angle1);
   }
 }
 
 void down(){
   if(angle2 < 180){
-    angle2 = angle2 + 5;
+    angle2 = angle2 - 5;
     myservo2.write(angle2);
   }
 }
 
 void up(){
   if(angle2 > 0){
-    angle2 = angle2 - 5;
+    angle2 = angle2 + 5;
     myservo2.write(angle2);
   }
 }
